@@ -1,6 +1,6 @@
 import BankDetailsDTO from "@domain/DTO/bank-details-DTO";
 
-class ClientDTO {
+class CustomerDTO {
   readonly id: string;
   readonly corporateName: string;
   readonly phone: string;
@@ -28,4 +28,4 @@ class ClientDTO {
   }
 }
 
-export default ClientDTO;
+export default CustomerDTO;

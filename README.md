@@ -213,6 +213,15 @@ mutation DeleteCustomer($input: IdInput!) {
 }
 ```
 
+**Variables:**
+```graphql
+{
+  "input": {
+    "id": "6123abd0-6d46-4d07-853a-484a083f4d09"
+  }
+}
+```
+
 #### Modelo de resposta positivo:
 
 ~~~json
@@ -348,7 +357,7 @@ query GetAllCustomers {
 
 **Query:**
 ```graphql
-query GetClientById($input: IdInput) {
+query GetCustomerById($input: IdInput) {
   getCustomerById(input: $input) {
     id
     corporateName
