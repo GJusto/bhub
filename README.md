@@ -24,6 +24,12 @@ ___
 2. Abrir o terminal na pasta raiz do projeto, e executar:
 
     ```bash
+    yarn install  
+    ```
+
+    e em seguida:
+
+     ```bash
     yarn start  
     ```
 
