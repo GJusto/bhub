@@ -1,10 +1,10 @@
-import ClientDTO from "@domain/DTO/customer-DTO";
-import ClientModel from "@domain/model/customer-model";
+import CustomerDTO from "@domain/DTO/customer-DTO";
+import CustomerModel from "@domain/model/customer-model";
 import BankDetailsExtension from "./bank-details-extension";
 
 class CustomerExtension {
-  static toDTO(model: ClientModel): ClientDTO {
-    return new ClientDTO(
+  static toDTO(model: CustomerModel): CustomerDTO {
+    return new CustomerDTO(
       model.id,
       model.corporateName,
       model.phone,
@@ -15,8 +15,8 @@ class CustomerExtension {
     );
   }
 
-  static toModel(result): ClientModel {
-    return new ClientModel(
+  static toModel(result): CustomerModel {
+    return new CustomerModel(
       result.id,
       result.corporateName,
       result.phone,
@@ -27,11 +27,11 @@ class CustomerExtension {
     );
   }
 
-  static toArrayModel(input): ClientModel[] {
+  static toArrayModel(input): CustomerModel[] {
     return input.map(CustomerExtension.toModel);
   }
 
-  static toArrayDTO(input: ClientModel[]): ClientDTO[] {
+  static toArrayDTO(input: CustomerModel[]): CustomerDTO[] {
     return input.map(CustomerExtension.toDTO);
   }
 }

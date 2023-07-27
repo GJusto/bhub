@@ -1,6 +1,6 @@
 import BankDetailsModel from "@domain/model/bank-details-model";
 
-class ClientModel {
+class CustomerModel {
   readonly id: string;
   readonly corporateName: string;
   readonly phone: string;
@@ -28,4 +28,4 @@ class ClientModel {
   }
 }
 
-export default ClientModel;
+export default CustomerModel;
