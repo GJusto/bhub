@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": ["src/core/*"],
+      "@domain/*": ["src/domain/*"],
+      "@infraestructure/*": ["src/infraestructure/*"],
+      "@resolvers/*": ["src/resolvers/*"],
+      "@root/*": ["./*"],
+      "@schemas/*": ["src/domain/schemas/*"],
+      "@services/*": ["src/services/*"],
+      "@transport/*": ["src/transport/*"]
+    }
+  }
+}
