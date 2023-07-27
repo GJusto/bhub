@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.path.json",
+  "compilerOptions": {
+    "outDir": "./bin",
+    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": ["es2020", "es6", "DOM"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "target": "es2020",
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["jest"]
+  }
+}
