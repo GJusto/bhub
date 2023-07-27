@@ -21,3 +21,6 @@ reports/
 
 # npmrc
 .npmrc
+
+# yarnlock
+yarn.lock
