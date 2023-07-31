@@ -1,0 +1,38 @@
+{
+  "version": "0.3.0",
+  "configurations": [
+    {
+      "command": "yarn start",
+      "name": "Run debug",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+
+    {
+      "name": "Run bhub",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn start",
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**", "node_modules/**"]
+    },
+    {
+      "name": "Run Bhub Windows",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/nodemon/bin/nodemon.js",
+      "runtimeArgs": [
+        "--nolazy",
+        "-r",
+        "tsconfig-paths/register",
+        "-r",
+        "ts-node/register"
+      ],
+      "args": ["src/bhub.ts"],
+      "cwd": "${workspaceRoot}",
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**", "node_modules/**"]
+    }
+  ]
+}
